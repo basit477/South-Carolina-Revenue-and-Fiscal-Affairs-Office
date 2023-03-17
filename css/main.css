@@ -1,0 +1,286 @@
+/*global colors*/
+:root {
+    --blue: #1b3a61;
+    --white: #ffffff;
+  }
+
+/*backgrounds and colors*/
+.service-divider{
+    height: 10px;
+    background-color: var(--blue);
+}
+.event-cal-divider{
+    width:10%;
+    color: brown;
+}
+.update-tag{
+    background-color: #666666;
+    color: #ffffff;
+    border-radius: 2px;
+}
+.event-time-card{
+    background-color: #8c6910;
+    color: #ffffff;
+    text-align: center;
+    width: 95%;
+    height: 70px;
+
+}
+.event-up-tag{
+    background-color: #d2b859;
+    border-radius: 2px;
+    color: black;
+    margin-bottom: -20px;
+}
+.event-can-tag{
+    background-color: #e9261d;
+    border-radius: 2px;
+    color: #ffffff;
+    margin-bottom: -15px;
+}
+.event-icon{
+ width: 20px;
+}
+.top-icon{
+    background-color:rgba(0,116,193,.25);
+    padding: 10px;
+    border-radius: 100px;
+}
+.event-divider{
+    background-color: #8c6910;
+    height: 3px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+
+/*Text and heading*/
+.heading-text{
+    color: var(--blue);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+.popular-links{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.updates-heading{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+.updates-subtext{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+.updates-meta-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+.event-month{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    padding-top: 5px;
+    margin-bottom: -12px;
+    font-weight: 600;
+}
+.event-date{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.event-heading{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.event-up-tag, .event-can-tag{
+    font-size: 12px;
+}
+.event-detail{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 5px;
+    line-height: 1.375;
+}
+.update-date{
+    color: #757575;
+}
+
+/*padding and margins*/
+.pr--5{
+    padding-right: 5rem ;
+}
+.pt--3{
+    padding-top: 5rem;
+}
+
+/*buttons*/
+.update-btn{
+    background-color: #0074c1;
+    color: #ffffff;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+.event-btn{
+    background-color: #0074c1;
+    color: #ffffff;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    width: fit-content;
+}
+.top-btn{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: right;
+    
+}
+.mt---10{
+    margin-top: -10px;
+}
+
+/*misc*/
+.mob-div{
+    display: none;
+}
+
+
+@media (max-width: 768px) {    
+
+    .event-time-card{
+        width: 100%;
+    }   
+    /*Text and heading*/
+    .heading-text{
+        font-size: 26px;
+    }
+    .popular-links{
+        font-size: 18px;
+    }
+    .updates-heading{
+        font-size: 18px;
+    }
+    .updates-subtext{
+        font-size: 14px;
+    }
+    .updates-meta-text{
+        font-size: 12px;
+    }
+    .event-month{
+        font-size: 14px;
+        margin-bottom: -10px;
+    }
+    .event-date{
+        font-size: 26px;
+    }
+    .event-up-tag, .event-can-tag{
+        font-size: 12px;
+    }
+    .event-detail{
+        font-size: 14px;
+    }
+    .update-date{
+        color: #757575;
+    }
+    
+    /*padding and margins*/
+    .pr--5{
+        padding-right: 1rem ;
+    }
+    .pt--3{
+        padding-top: 2rem;
+    }
+    
+    /*buttons*/
+    .update-btn{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .event-btn{
+        font-size: 14px;
+    }
+    .top-btn{
+        font-size: 14px;
+    }
+
+    /*misc*/
+    
+    .mob-div{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .mt-3{
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {    
+
+    .event-time-card{
+        width: 100%;
+    }   
+    /*Text and heading*/
+    .heading-text{
+        font-size: 26px;
+    }
+    .popular-links{
+        font-size: 18px;
+    }
+    .updates-heading{
+        font-size: 18px;
+    }
+    .updates-subtext{
+        font-size: 14px;
+    }
+    .updates-meta-text{
+        font-size: 12px;
+    }
+    .event-month{
+        font-size: 14px;
+        margin-bottom: -10px;
+    }
+    .event-date{
+        font-size: 26px;
+    }
+    .event-up-tag, .event-can-tag{
+        font-size: 12px;
+    }
+    .event-detail{
+        font-size: 14px;
+    }
+    .update-date{
+        color: #757575;
+    }
+    
+    /*padding and margins*/
+    .pr--5{
+        padding-right: 1.5rem ;
+    }
+    .pt--3{
+        padding-top: 2rem;
+    }
+    
+    /*buttons*/
+    .update-btn{
+        font-size: 14px;
+    }
+    .event-btn{
+        font-size: 14px;
+    }
+    .top-btn{
+       font-size: 14px;
+    }
+
+    /*misc*/
+    .mob-div{
+        display: none;
+    }
+
+}
