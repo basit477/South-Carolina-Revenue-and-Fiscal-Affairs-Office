@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+
 /*global colors*/
 :root {
     --blue: #1b3a61;
@@ -186,6 +189,9 @@ footer{
 .hero-row{
     height: 387px;
 }
+.mt---10{
+    margin-top: -10px;
+}
 
 /*buttons*/
 .update-btn{
@@ -195,6 +201,12 @@ footer{
     font-family: "Open Sans";
     font-size: 16px;
 }
+.update-btn:hover {
+    background-color: #225089 !important;
+  }
+  .update-btn:active {
+    background-color: #225089 !important;
+  }
 .event-btn{
     background-color: #0074c1;
     color: var(--white);
@@ -203,6 +215,12 @@ footer{
     font-size: 16px;
     width: fit-content;
 }
+.event-btn:hover {
+    background-color: #225089 !important;
+  }
+  .event-btn:active {
+    background-color: #225089 !important;
+  }
 .top-btn{
     font-family: "Open Sans";
     font-size: 16px;
@@ -210,17 +228,26 @@ footer{
     text-align: right;
     
 }
-.mt---10{
-    margin-top: -10px;
-}
-
-/*search bar*/
-/* .search-bar{
-    background-color: #ffffff;
+.submit-btn{
+    padding: 12px 35px;
+    font-family: "Open Sans";
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: var(--white);
+    background-color: #0074C1;
     border-radius: none;
     border: none;
-    width: 90%;
-} */
+    font-size: 16px;
+}
+.submit-btn:hover {
+    background-color: #225089 !important;
+  }
+  .submit-btn:active {
+    background-color: #225089 !important;
+  }
+
+
+/*search bar*/
 .form-control{
     display: block;
     width: 100%;
@@ -237,22 +264,41 @@ footer{
     margin-right: -100px;
 }
 
-.submit-btn{
-    padding: 14px 35px;
-    font-family: "Open Sans";
-    letter-spacing: 1px;
-    font-weight: 600;
-    color: var(--white);
-    background-color: #0074c1;
-    border-radius: none;
-    border: none;
-    font-size: 14px;
-}
+/*menu*/
+.bar1, .bar2, .bar3 {
+    width: 45px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
 
 /*misc*/
 .mob-div{
     display: none;
 }
+::placeholder {
+    font-family: "Open Sans";
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+  }
 
 
 @media (max-width: 768px) {  
@@ -454,6 +500,12 @@ footer{
   font-size: 13px !important;
   background-color: #3068ad !important;
 }
+.menu-btn:hover {
+  background-color: #225089 !important;
+}
+.menu-btn:active {
+  background-color: #225089 !important;
+}
 
 @media screen and (max-width: 1215px) {
   .menu-btn {
@@ -498,12 +550,7 @@ footer{
     width: 80px !important;
   }
 }
-.menu-btn-active {
-  background-color: #1b3a61 !important;
-}
-.menu-btn:hover {
-  background-color: #225089 !important;
-}
+
 
 .navbar {
   padding: 0% !important;
@@ -586,6 +633,12 @@ footer{
   border-radius: 0% !important;
   background-color: #0074c1 !important;
 }
+.icon-btn:hover {
+  background-color: #225089 !important;
+}
+.icon-btn:active {
+  background-color: #225089 !important;
+}
 .row-margin {
   margin: 0% !important;
   padding: 0% !important;
@@ -634,6 +687,7 @@ footer{
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
 }
 .all-col {
   flex-direction: column;
