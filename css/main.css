@@ -2,6 +2,11 @@
 :root {
     --blue: #1b3a61;
     --white: #ffffff;
+    --brown: #8c6910;
+    --grey: #E1E5EC;
+    --dark-grey :#666666;
+    --yellow :#d2b859;
+    --red: #e9261d;
   }
 
 /*backgrounds and colors*/
@@ -11,8 +16,9 @@
     background-size: cover;
     text-align: center;
 }
-.bg-grey{
-    background-color: rgba(204,210,222,.59);
+
+.card-background{
+    background-color: var(--grey);
 }
 .service-divider{
     margin-left: 0.8rem;
@@ -21,15 +27,15 @@
 }
 .event-cal-divider{
     width:10%;
-    color: brown;
+    color: #8c6910;
 }
 .update-tag{
-    background-color: #666666;
+    background-color: var(--dark-grey);
     color: #ffffff;
     border-radius: 2px;
 }
 .event-time-card{
-    background-color: #8c6910;
+    background-color: var(--brown);
     color: #ffffff;
     text-align: center;
     width: 95%;
@@ -37,13 +43,13 @@
 
 }
 .event-up-tag{
-    background-color: #d2b859;
+    background-color: var(--yellow);
     border-radius: 2px;
     color: black;
     margin-bottom: -20px;
 }
 .event-can-tag{
-    background-color: #e9261d;
+    background-color: var(--red);
     border-radius: 2px;
     color: #ffffff;
     margin-bottom: -15px;
@@ -57,7 +63,7 @@
     border-radius: 100px;
 }
 .event-divider{
-    background-color: #8c6910;
+    background-color: var(--brown);
     height: 3px;
     width: 50px;
     margin-top: 0px;
@@ -75,7 +81,7 @@ footer{
     font-family: 'Roboto Slab', serif;
     font-size: 32px;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--white);
 }
 .heading-text{
     color: var(--blue);
@@ -149,14 +155,25 @@ footer{
     font-family: "Open Sans";
     font-size: 16px;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--white);
     margin-bottom: 20px;
     margin-top: -5px;
+}
+.card-text{
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--blue);
+    margin-top: 20px;
 }
 
 /*images*/
 .footer-logo{
     width: 135px;
+}
+.card-icon{
+    width: 114px;
+    height: 99px;
 }
 
 /*padding and margins*/
@@ -173,14 +190,14 @@ footer{
 /*buttons*/
 .update-btn{
     background-color: #0074c1;
-    color: #ffffff;
+    color: var(--white);
     border: none;
     font-family: "Open Sans";
     font-size: 16px;
 }
 .event-btn{
     background-color: #0074c1;
-    color: #ffffff;
+    color: var(--white);
     border: none;
     font-family: "Open Sans";
     font-size: 16px;
@@ -212,7 +229,7 @@ footer{
     font-size: 1rem;
     font-weight: 400;
     color: #000;
-    background-color: #fff;
+    background-color: var(--white);
     background-clip: padding-box;
     border: 1px solid #ccc;
     border-radius: 2px;
@@ -221,14 +238,15 @@ footer{
 }
 
 .submit-btn{
-    padding: 14px 25px;
+    padding: 14px 35px;
+    font-family: "Open Sans";
     letter-spacing: 1px;
     font-weight: 600;
-    color: #fff;
+    color: var(--white);
     background-color: #0074c1;
     border-radius: none;
     border: none;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /*misc*/
@@ -277,6 +295,9 @@ footer{
     .update-date{
         color: #757575;
     }
+    .card-text{
+        font-size: 16px;
+    }
 
     
     /*padding and margins*/
@@ -307,7 +328,7 @@ footer{
     /*footer*/
     .footer-divider{
         display: block;
-        color: white;
+        color: var(--white);
         margin-top: 20px;
         margin-bottom: 20px;
         width: 95%;
@@ -369,11 +390,9 @@ footer{
     .update-date{
         color: #757575;
     }
-    .submit-btn{
-        padding: 14px 30px;
-        font-size: 12px;
-        margin-top: 0px;
-
+   
+    .card-text{
+        font-size: 16px;
     }
     
     /*padding and margins*/
@@ -393,6 +412,12 @@ footer{
     }
     .top-btn{
        font-size: 14px;
+    }
+    .submit-btn{
+        padding: 14px 30px;
+        font-size: 12px;
+        margin-top: 0px;
+
     }
 
     /*footer*/
@@ -569,7 +594,7 @@ footer{
   margin: 0% !important;
   padding: 0% !important;
   height: inherit !important;
-  background-color: #e1e5ea;
+  background-color: #f3f6f9;
   display: flex;
   justify-content: center;
   border-bottom: 8px solid #1b3a61 !important;
